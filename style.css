@@ -1,0 +1,471 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+nav
+{
+	position: fixed;
+	background-color: black;
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;/* Use the selected font */
+    font-size: 35px;
+    position: relative;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+}
+ul
+{
+    position: relative;
+    float: right;
+    margin: 20px;
+
+}
+ul li{
+    display: inline;
+    line-height: 70px;
+    margin: 0 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.main_img{
+    width: 100%;
+    height: 500px;
+
+}
+.section1{
+    padding-top: 70px;
+}
+.img_text {
+    font-size: 45px;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: white;
+    background-color: transparent;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease,text-shadow 0.3s ease;
+}
+
+.img_text:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+}
+
+.welcome_img{
+    width: 100%;
+    height: 250px;
+}
+.container{
+    padding-top: 70px;
+}
+/* Container for the services section */
+.services-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Styles for the heading */
+.services-container h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for the services list */
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style for each service item */
+.service-item {
+    font-size: 2em;
+    background-color: grey;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect for service items */
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Bubble effect for service items */
+.service-item::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: brown;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.service-item:hover::after {
+    opacity: 0.8;
+}
+
+/* Style for paragraphs */
+.services-container p {
+    font-size: 1.5em;
+    color: #666;
+    max-width: 2000px;
+    margin:0;
+}
+/* Container for the experience section */
+.experience-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Main heading style */
+.experience-container h1 {
+    font-size: 3.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for each experience item */
+.experience-item {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for experience items */
+.experience-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+}
+
+/* Unique square effect on hover */
+.experience-item::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: #e3e3e3;
+    z-index: -1;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.experience-item:hover::before {
+    opacity: 0.6;
+}
+
+/* Style for paragraph text */
+.experience-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* Container for the addresses section */
+.addresses-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Heading style */
+.addresses-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for each address box */
+.address-box {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Unique hover effect for address boxes */
+.address-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+}
+
+/* Unique bubble effect on hover */
+.address-box::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 80px;
+    height: 80px;
+    background-color: #e3e3e3;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.address-box:hover::before {
+    opacity: 0.6;
+}
+
+/* Container for the contact section */
+.contact-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+
+    /* Removed text-align to allow left alignment */
+}
+
+/* Main heading style */
+.contact-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    /* Centering the heading in the container */
+    text-align: left;
+}
+
+/* Style for the contact box */
+.contact-box {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: 0; /* Align to the left */
+    margin-right: auto; /* Centering horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* No centering here, aligns the box to the left */
+}
+
+/* Style for each contact heading */
+.contact-box h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+/* Container for the form */
+.form-container {
+    text-align: center; /* Center the form heading */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Style for the form heading */
+.form-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for the hiring form container */
+.hiring_form {
+    display: inline-block; /* Center the form container */
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for form labels */
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Style for form inputs and textarea */
+.form-group input[type="text"], 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+/* Style for form submit button */
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding */
+    position: relative; /* Ensures footer is positioned correctly */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern touch */
+}
+
+/* Style for footer heading */
+footer h2 {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 0; /* Remove default margin */
+    font-weight: normal; /* Normal font weight */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    footer h2 {
+        font-size: 1em; /* Smaller font size for smaller screens */
+    }
+}
+
+/*-----------LOGIN--------------*/
+
+.form-wrapper {
+    background-image: url('books.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: absolute; /* Ensure it covers the full viewport */
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0; /* Optional: can be removed if not needed */
+}
+.centered-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center align the text */
+}
+
+
+.centered-form h2 {
+    margin: 0;
+    padding: 10px; /* Add padding for spacing */
+    color: #000000; /* Simple black text color */
+    background-color: #e0e0e0; /* Light gray background color */
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0 0; /* Round the top corners to match the form */
+}
+
+.centered-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.centered-form form div {
+    margin-bottom: 15px;
+}
+
+.centered-form form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.centered-form form input[type="text"],
+.centered-form form input[type="password"],
+.centered-form form input[type="submit"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.centered-form form input[type="submit"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.centered-form form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*--------admin login --------*/

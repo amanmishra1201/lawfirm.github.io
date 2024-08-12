@@ -1,2 +1,2 @@
 # lawfirm.github.io
-lawfirm manageent
+lawfirm management
